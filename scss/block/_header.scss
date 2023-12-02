@@ -1,0 +1,118 @@
+.header {
+    padding-top: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 30px top;
+    background-image: url(../img/header_bg.png);
+}
+
+.div_container {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url(../img/header_bg.png);
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.header_logo {
+    max-width: 135px;
+    height: 38px;
+}
+
+.nav_item {
+    display: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__link {
+    color: #36536B;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.7;
+    transition: .4s;
+}
+
+.nav__link:hover {
+    color: #36536B;
+    opacity: 1;
+}
+
+.header__button {
+    display: none;
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    border-radius: 24px;
+    background-color: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 26.5px;
+    padding-right: 24.5px;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.header__button:hover {
+    background-color: #DA6D97;
+}
+
+.header__menu {
+    width: 28px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-image: url(../img/header_menu.svg);
+    background-position: center;
+    background-color: transparent;
+
+}
+
+@media screen and (min-width: 765px) {
+    .nav_item {
+        display: flex;
+    }
+
+    .nav__link {
+        color: #36536B;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .header__button {
+        display: inline-block;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+
+    .header {
+        background-image: url(../img/header_bg.png);
+        background-position: 213px top;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+       background-image: url(/img/header_bg_l.png);
+       background-position: right top;
+       background-size: contain;
+       background-size: 35%;
+    }
+}
